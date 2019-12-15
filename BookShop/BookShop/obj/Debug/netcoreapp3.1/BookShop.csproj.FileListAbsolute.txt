@@ -34,3 +34,14 @@ C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.A
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.RazorTargetAssemblyInfo.cache
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.dll
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.pdb
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\bin\Debug\netcoreapp3.1\BookShop.Views.dll
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\bin\Debug\netcoreapp3.1\BookShop.Views.pdb
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.RazorAssemblyInfo.cache
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.RazorAssemblyInfo.cs
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.TagHelpers.input.cache
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.TagHelpers.output.cache
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.RazorCoreGenerate.cache
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Book\List.cshtml.g.cs
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.RazorTargetAssemblyInfo.cs
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.Views.pdb
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.csproj.CopyComplete
