@@ -1,12 +1,20 @@
-﻿ @model BooksListViewModel
+﻿@using System.Globalization
+@model BooksListViewModel
 
 
-    <h1>@Model.CurrentCategory</h1>
-    @foreach (var book in Model.Books)
-    {
-        <div>
-            <h2>@book.Name</h2>
-            <h3>@book.Price.ToString("\u20AC0.00")</h3>
-            <h4>@book.Category.CategoryName</h4>
+<h1>@Model.CurrentCategory</h1>
+@foreach (var book in Model.Books)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="@book.ImageThumbnailUrl" alt="">
+            <div class="caption">
+                <h3 class="pull-right">@book.Price.ToString("\u20AC0.00")</h3>
+                <h3>
+                    <a>@book.Name</a>
+                </h3>
+                <p>@book.ShortDescription</p>
+            </div>
         </div>
-    }
+    </div>
+}
