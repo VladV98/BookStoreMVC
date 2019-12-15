@@ -25,7 +25,7 @@ namespace BookShop.Controllers
             BooksListViewModel booksListViewModel = new BooksListViewModel();
             booksListViewModel.Books = _bookRepository.AllBooks;
             booksListViewModel.CurrentCategory = "Computer Books";
-            return View(booksListViewModel);// displays all books
+            return View(booksListViewModel);// displays all books 
         }
     }
 }

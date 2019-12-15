@@ -9,7 +9,6 @@ namespace BookShop.ViewModels
     public class BooksListViewModel
     {
         public IEnumerable<Book>Books { get; set; }
-
         public string CurrentCategory { get; set; }
     }
 }

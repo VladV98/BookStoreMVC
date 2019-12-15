@@ -45,3 +45,6 @@ C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.RazorTargetAssemblyInfo.cs
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.Views.pdb
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.csproj.CopyComplete
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
