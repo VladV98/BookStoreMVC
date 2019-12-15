@@ -13,7 +13,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace BookShop
 {
-    public class Startup
+    public class Startup 
     {
         public IConfiguration Configuration { get; }
 
@@ -26,8 +26,8 @@ namespace BookShop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
-            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
-            services.AddScoped<IBookRepository, MockBookRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IBookRepository, BookRepository>();
             services.AddControllersWithViews();
         }
 
