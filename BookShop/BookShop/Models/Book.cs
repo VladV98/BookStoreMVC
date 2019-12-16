@@ -9,6 +9,7 @@ namespace BookShop.Models
     {
         public int BookId { get; set; }
         public string Name { get; set; }
+        public string Author { get; set; }
         public string ShortDescription { get; set; }
         public string LongDescription { get; set; }
         public string ReleaseYear { get; set; }

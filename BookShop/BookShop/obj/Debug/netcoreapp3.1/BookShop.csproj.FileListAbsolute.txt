@@ -69,3 +69,4 @@ C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\bin\Debug\netcoreapp3.1\runtimes\w
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Book\Details.cshtml.g.cs

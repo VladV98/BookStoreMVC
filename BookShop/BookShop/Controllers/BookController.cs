@@ -27,5 +27,14 @@ namespace BookShop.Controllers
             booksListViewModel.CurrentCategory = "Computer Books";
             return View(booksListViewModel);// displays all books 
         }
+
+        public IActionResult Details(int id)
+        {
+            var book = _bookRepository.GetBookById(id);
+            if (book == null)
+                return NotFound();
+            return View(book);
+        }
+        
     }
 }

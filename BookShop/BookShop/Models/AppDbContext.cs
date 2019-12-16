@@ -31,6 +31,7 @@ namespace BookShop.Models
             {
                 BookId = 1,
                 Name = " C# Yellow Book",
+                Author = "Rob Miles",
                 Price = 14.12M,
                 ShortDescription = "Learn C# from first principles the Rob Miles way.",
                 LongDescription = "Learn C# from first principles the Rob Miles way. With jokes, puns, and a rigorous problem solving based approach.You can download all the code samples used in the book from here: http: //www.robmiles.com/s/Yellow-Book-Code-Samples-64.z ",
@@ -47,6 +48,7 @@ namespace BookShop.Models
             {
                 BookId = 2,
                 Name = "R for Data Science",
+                Author = "Garrett Grolemund",
                 Price = 30.69M,
                 ShortDescription = "Learn how to use R to turn raw data into insight, knowledge, and understanding.",
                 LongDescription = "Learn how to use R to turn raw data into insight, knowledge, and understanding. This book introduces you to R, RStudio, and the tidyverse, a collection of R packages designed to work together to make data science fast, fluent, and fun. Suitable for readers with no previous programming experience, R for Data Science is designed to get you doing data science as quickly as possible.",
@@ -63,6 +65,7 @@ namespace BookShop.Models
             {
                 BookId = 3,
                 Name = "Python For Kids",
+                Author = "Jason Briggs",
                 Price = 22.74M,
                 ShortDescription = "Easy Python book!",
                 LongDescription = "Python is a powerful, expressive programming language that's easy to learn and fun to use! But books about learning to program in Python can be kind of dull, gray, and boring, and that's no fun for anyone. Python for Kids brings Python to life and brings you (and your parents) into the world of programming. The ever-patient Jason R. Briggs will guide you through the basics as you experiment with unique (and often hilarious) example programs that feature ravenous monsters, secret agents, thieving ravens, and more. ",
@@ -79,6 +82,7 @@ namespace BookShop.Models
             {
                 BookId = 4,
                 Name = "Functional Programming",
+                Author = "Greg Michaelson",
                 Price = 20.97M,
                 ShortDescription = "World's smallest programming language.",
                 LongDescription = "Functional programming is rooted in lambda calculus, which constitutes the world's smallest programming language. This well-respected text offers an accessible introduction to functional programming concepts and techniques for students of mathematics and computer science. The treatment is as nontechnical as possible, and it assumes no prior knowledge of mathematics or functional programming. Cogent examples illuminate the central ideas, and numerous exercises appear throughout the text, offering reinforcement of key concepts. All problems feature complete solutions.",
@@ -95,6 +99,7 @@ namespace BookShop.Models
             {
                 BookId = 5,
                 Name = "The Computer Book",
+                Author = "Simson L. Garfinkel",
                 Price = 13.95M,
                 ShortDescription = "Part of Sterling's extremely popular Milestones series",
                 LongDescription = "With 250 illustrated landmark inventions, publications, and events--encompassing everything from ancient record-keeping devices to the latest computing technologies--this highly topical addition to the Sterling Milestones series takes a chronological journey through the history and future of computer science. Two expert authors, with decades' of experience working in computer research and innovation, explore topics including the Sumerian abacus, the first spam message, Morse code, cryptography, early computers, Isaac Asimov's laws of robotics, UNIX and early programming languages, movies, video games, mainframes, minis and micros, hacking, virtual reality, and more.",
@@ -111,6 +116,7 @@ namespace BookShop.Models
             {
                 BookId = 6,
                 Name = "Bad Science",
+                Author = "Ben Goldacre",
                 Price = 11.14M,
                 ShortDescription = "This book will shock you!",
                 LongDescription = "Since 2003 Dr Ben Goldacre has been exposing dodgy medical data in his popular Guardian column. In this eye-opening book he takes on the MMR hoax and misleading cosmetics ads, acupuncture and homeopathy, vitamins and mankind's vexed relationship with all manner of `toxins'. Along the way, the self-confessed `Johnny Ball cum Witchfinder General' performs a successful detox on a Barbie doll, sees his dead cat become a certified nutritionist and probes the supposed medical qualifications of `Dr' Gillian McKeith.",
@@ -127,6 +133,7 @@ namespace BookShop.Models
             {
                 BookId = 7,
                 Name = "Steal This Book",
+                Author = "Wallace Wang",
                 Price = 21.44M,
                 ShortDescription = "Hacking like never before!",
                 LongDescription = "As seasoned author Wallace Wang explains, hacking can also mean questioning the status quo, looking for your own truths and never accepting at face value anything authorities say or do. The completely revised fourth edition of this offbeat, non-technical book examines what hackers do, how they do it, and how you can protect yourself. Written in the same informative, irreverent, and entertaining style that made the first three editions hugely successful, Steal This Computer Book 4.0 will expand your mind and raise your eyebrows. New chapters discuss the hacker mentality, social engineering and lock picking, exploiting P2P file-sharing networks, and how people manipulate search engines and pop-up ads to obtain and use personal information. Wang also takes issue with the media for hacking the news and presenting the public with self-serving stories of questionable accuracy. ",
@@ -143,6 +150,7 @@ namespace BookShop.Models
             {
                 BookId = 8,
                 Name = "The Science Book",
+                Author = "Dorling Kindersley",
                 Price = 18.58M,
                 ShortDescription = "Most scientific theories and big ideas.",
                 LongDescription = "Exploring more than 80 of the world's most scientific theories and big ideas across the fields of physics, chemistry, biology, astronomy, geology, and maths, this book offers a fascinating look at the history of science.Discover how Galileo worked out his scientific theories of motion and inertia, why Isaac Newton gets the credit for them, and what the discovery of DNA meant.All the big scientific ideas are brought to life with quirky graphics, pithy quotes and step-by-step mind maps - from evolution and continental drift to black holes and genetic engineering - using eye-catching artworks to show how the ideas of famous scientists have affected our understanding of the world. ",
@@ -160,6 +168,7 @@ namespace BookShop.Models
             {
                 BookId = 9,
                 Name = "AQA Computing A2",
+                Author = "Sylvia Langfield",
                 Price = 32.95M,
                 ShortDescription = "Coverage and support printed and online resources.",
                 LongDescription = "Learning Objectives, clearly referenced to the related statements in the AQA specification, let students know exactly what they'll need to learn and understand in that topic. Learning Activities in the student's books are enhanced by electronic animations, simulations and videos. Study tips provide essential advice on common errors and exam preparation. Summary questions promote independent learning and develop students' exam techniques through practice, preparation and study tips.",
@@ -176,6 +185,7 @@ namespace BookShop.Models
             {
                 BookId = 10,
                 Name = "Technical Analysis For Dummies",
+                Author = "Barbara Rockefeller",
                 Price = 32.06M,
                 ShortDescription = "Fundamentals of technical analysis",
                 LongDescription = "Technical Analysis For Dummies helps you take a hard-headed look at what securities prices are actually doing rather than what economists or analysts say they should be doing, giving you the know-how to use that data to decide whether to buy or sell individual securities. Since the publication of the first edition, readers have been faced with many changes, such as new interest rates, looming bank crises, and adjusting market climates. This new edition provides an updated look at unique formulas and key indicators, as well as refreshed and practical examples that reflect today today's financial atmosphere. * Determine how markets are performing and make decisions using real data * Spot investment trends and turning points * Improve your profits and your portfolio performance With straightforward coverage of concepts and execution, Technical Analysis For Dummies shows you how to make better trading decisions in no time.",
@@ -192,6 +202,7 @@ namespace BookShop.Models
             {
                 BookId = 11,
                 Name = "Technical Writing Process",
+                Author = "Kieran Morgan",
                 Price = 18.95M,
                 ShortDescription = "Simple five-step process!",
                 LongDescription = "It's suitable for a wide range of audiences: aspiring technical writers and students of technical writing, non-writers who find themselves assigned with the task of creating technical documentation, established writers who want to bring more structure to their work, and anyone managing a documentation project.",

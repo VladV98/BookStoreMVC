@@ -3,14 +3,16 @@ using BookShop.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191216180749_AuthorAdded")]
+    partial class AuthorAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -71,7 +73,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 1,
-                            Author = "Rob Miles",
                             CategoryId = 1,
                             ImageThumbnailUrl = "https://i.ibb.co/dPjGfXz/Webp-net-resizeimage-3.png",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/7287/9781728724966.jpg",
@@ -87,7 +88,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 2,
-                            Author = "Garrett Grolemund",
                             CategoryId = 2,
                             ImageThumbnailUrl = "https://i.ibb.co/fkPtdL8/Webp-net-resizeimage-4.png",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4919/9781491910399.jpg",
@@ -103,7 +103,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 3,
-                            Author = "Jason Briggs",
                             CategoryId = 1,
                             ImageThumbnailUrl = "https://i.ibb.co/k1vrFZN/Webp-net-resizeimage-1.png",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5932/9781593274078.jpg",
@@ -119,7 +118,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 4,
-                            Author = "Greg Michaelson",
                             CategoryId = 3,
                             ImageThumbnailUrl = "https://i.ibb.co/FKsN8SN/Webp-net-resizeimage.png",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/4864/9780486478838.jpg",
@@ -135,7 +133,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 5,
-                            Author = "Simson L. Garfinkel",
                             CategoryId = 1,
                             ImageThumbnailUrl = "https://i.ibb.co/hDBYgCY/9781454926214.jpg",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4549/9781454926214.jpg",
@@ -151,7 +148,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 6,
-                            Author = "Ben Goldacre",
                             CategoryId = 2,
                             ImageThumbnailUrl = "https://i.ibb.co/dcNJ1Kx/9780007284870.jpg",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0072/9780007284870.jpg",
@@ -167,7 +163,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 7,
-                            Author = "Wallace Wang",
                             CategoryId = 1,
                             ImageThumbnailUrl = "https://i.ibb.co/vjXQnYF/9781593271053.jpg",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5932/9781593271053.jpg",
@@ -183,7 +178,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 8,
-                            Author = "Dorling Kindersley",
                             CategoryId = 2,
                             ImageThumbnailUrl = "https://i.ibb.co/1vDYw6b/9781409350156.jpg",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4093/9781409350156.jpg",
@@ -199,7 +193,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 9,
-                            Author = "Sylvia Langfield",
                             CategoryId = 1,
                             ImageThumbnailUrl = "https://i.ibb.co/Hhc8DFm/9780748782987.jpg",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7487/9780748782987.jpg",
@@ -215,7 +208,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 10,
-                            Author = "Barbara Rockefeller",
                             CategoryId = 3,
                             ImageThumbnailUrl = "https://i.ibb.co/540LJMc/9781118779613.jpg",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/1187/9781118779613.jpg",
@@ -231,7 +223,6 @@ namespace BookShop.Migrations
                         new
                         {
                             BookId = 11,
-                            Author = "Kieran Morgan",
                             CategoryId = 3,
                             ImageThumbnailUrl = "https://i.ibb.co/vqkbW7W/9780994169310.jpg",
                             ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/9941/9780994169310.jpg",
