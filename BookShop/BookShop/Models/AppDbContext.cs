@@ -39,7 +39,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = true,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/Kjtb65X/Webp-net-resizeimage-3.png",
+                ImageThumbnailUrl = "https://i.ibb.co/dPjGfXz/Webp-net-resizeimage-3.png",
                 ReleaseYear = "19 Oct 2018"
             });
 
@@ -55,7 +55,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/WKQhH0y/Webp-net-resizeimage-4.png",
+                ImageThumbnailUrl = "https://i.ibb.co/fkPtdL8/Webp-net-resizeimage-4.png",
                 ReleaseYear = "20 Jan 2017"
             });
 
@@ -71,7 +71,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/MsdKCV7/Webp-net-resizeimage-1.png",
+                ImageThumbnailUrl = "https://i.ibb.co/k1vrFZN/Webp-net-resizeimage-1.png",
                 ReleaseYear = "17 Jan 2013"
             });
 
@@ -87,7 +87,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/0fMVNn0/Webp-net-resizeimage.png",
+                ImageThumbnailUrl = "https://i.ibb.co/FKsN8SN/Webp-net-resizeimage.png",
                 ReleaseYear = "18 Aug 2011"
             });
 
@@ -103,7 +103,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/sQxFrwq/9781454926214.jpg",
+                ImageThumbnailUrl = "https://i.ibb.co/hDBYgCY/9781454926214.jpg",
                 ReleaseYear = "06 Nov 2018"
             });
 
@@ -119,14 +119,14 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/ByHZvKm/9780007284870-1.jpg",
+                ImageThumbnailUrl = "https://i.ibb.co/dcNJ1Kx/9780007284870.jpg",
                 ReleaseYear = "30 Mar 2010"
             });
 
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 BookId = 7,
-                Name = "Steal This Book 5.0",
+                Name = "Steal This Book",
                 Price = 21.44M,
                 ShortDescription = "Hacking like never before!",
                 LongDescription = "As seasoned author Wallace Wang explains, hacking can also mean questioning the status quo, looking for your own truths and never accepting at face value anything authorities say or do. The completely revised fourth edition of this offbeat, non-technical book examines what hackers do, how they do it, and how you can protect yourself. Written in the same informative, irreverent, and entertaining style that made the first three editions hugely successful, Steal This Computer Book 4.0 will expand your mind and raise your eyebrows. New chapters discuss the hacker mentality, social engineering and lock picking, exploiting P2P file-sharing networks, and how people manipulate search engines and pop-up ads to obtain and use personal information. Wang also takes issue with the media for hacking the news and presenting the public with self-serving stories of questionable accuracy. ",
@@ -135,7 +135,7 @@ namespace BookShop.Models
                 InStock = false,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/TwCbZwF/9781593271053.jpg",
+                ImageThumbnailUrl = "https://i.ibb.co/vjXQnYF/9781593271053.jpg",
                 ReleaseYear = "05 Jun 2006"
             });
 
@@ -151,7 +151,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = true,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/3sZ2sSF/9781409350156.jpg",
+                ImageThumbnailUrl = "https://i.ibb.co/1vDYw6b/9781409350156.jpg",
                 ReleaseYear = "17 Sep 2015"
             });
 
@@ -168,7 +168,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = true,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/HDFRggX/9780748782987.jpg",
+                ImageThumbnailUrl = "https://i.ibb.co/Hhc8DFm/9780748782987.jpg",
                 ReleaseYear = "01 Nov 2014"
             });
 
@@ -184,7 +184,7 @@ namespace BookShop.Models
                 InStock = true,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/qntD57Y/9781118779613.jpg",
+                ImageThumbnailUrl = "https://i.ibb.co/540LJMc/9781118779613.jpg",
                 ReleaseYear = "18 Mar 2014"
             });
 
@@ -200,7 +200,7 @@ namespace BookShop.Models
                 InStock = false,
                 IsBookOfTheWeek = false,
                 Paid = false,
-                ImageThumbnailUrl = "https://i.ibb.co/ZgTyN6L/9780994169310.jpg",
+                ImageThumbnailUrl = "https://i.ibb.co/vqkbW7W/9780994169310.jpg",
                 ReleaseYear = "23 May 2015"
             });
         }
