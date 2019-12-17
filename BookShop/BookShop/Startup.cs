@@ -29,6 +29,7 @@ namespace BookShop
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));//  when user comes to site creates scoped shopping cart,  getcart method going to be invoked when user senses a request
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddHttpContextAccessor();
             services.AddSession();
             services.AddControllersWithViews();
