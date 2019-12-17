@@ -34,7 +34,7 @@ namespace BookShop.Controllers
 
             if (_shoppingCart.ShoppingCartItems.Count == 0)
             {
-                ModelState.AddModelError("", "Your cart is empty, add some pies first");
+                ModelState.AddModelError("", "Your cart is empty, add some books first");
             }
 
             if (ModelState.IsValid)
@@ -48,7 +48,7 @@ namespace BookShop.Controllers
 
         public IActionResult CheckoutComplete()
         {
-            ViewBag.CheckoutCompleteMessage = "Thanks for your order. You'll soon enjoy our delicious pies!";
+            ViewBag.CheckoutCompleteMessage = "Thanks for your order! Enjoy your books:)";
             return View();
         }
     }
