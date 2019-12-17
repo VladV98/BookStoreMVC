@@ -15,7 +15,8 @@ namespace BookShop.Models
 
         public DbSet<Book> Books { get; set; }
         public DbSet<Category> Categories { get; set; }
- 
+        public DbSet<ShoppingCartItem> ShoppingCartItems{ get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -39,7 +40,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/7287/9781728724966.jpg",
                 InStock = true,
                 IsBookOfTheWeek = true,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/dPjGfXz/Webp-net-resizeimage-3.png",
                 ReleaseYear = "19 Oct 2018"
             });
@@ -56,7 +56,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4919/9781491910399.jpg",
                 InStock = true,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/fkPtdL8/Webp-net-resizeimage-4.png",
                 ReleaseYear = "20 Jan 2017"
             });
@@ -73,7 +72,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5932/9781593274078.jpg",
                 InStock = true,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/k1vrFZN/Webp-net-resizeimage-1.png",
                 ReleaseYear = "17 Jan 2013"
             });
@@ -90,7 +88,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/4864/9780486478838.jpg",
                 InStock = true,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/FKsN8SN/Webp-net-resizeimage.png",
                 ReleaseYear = "18 Aug 2011"
             });
@@ -107,7 +104,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4549/9781454926214.jpg",
                 InStock = true,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/hDBYgCY/9781454926214.jpg",
                 ReleaseYear = "06 Nov 2018"
             });
@@ -124,7 +120,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0072/9780007284870.jpg",
                 InStock = true,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/dcNJ1Kx/9780007284870.jpg",
                 ReleaseYear = "30 Mar 2010"
             });
@@ -141,7 +136,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5932/9781593271053.jpg",
                 InStock = false,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/vjXQnYF/9781593271053.jpg",
                 ReleaseYear = "05 Jun 2006"
             });
@@ -158,7 +152,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4093/9781409350156.jpg",
                 InStock = true,
                 IsBookOfTheWeek = true,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/1vDYw6b/9781409350156.jpg",
                 ReleaseYear = "17 Sep 2015"
             });
@@ -176,7 +169,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7487/9780748782987.jpg",
                 InStock = true,
                 IsBookOfTheWeek = true,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/Hhc8DFm/9780748782987.jpg",
                 ReleaseYear = "01 Nov 2014"
             });
@@ -193,7 +185,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/1187/9781118779613.jpg",
                 InStock = true,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/540LJMc/9781118779613.jpg",
                 ReleaseYear = "18 Mar 2014"
             });
@@ -210,7 +201,6 @@ namespace BookShop.Models
                 ImageUrl = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/9941/9780994169310.jpg",
                 InStock = false,
                 IsBookOfTheWeek = false,
-                Paid = false,
                 ImageThumbnailUrl = "https://i.ibb.co/vqkbW7W/9780994169310.jpg",
                 ReleaseYear = "23 May 2015"
             });

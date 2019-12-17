@@ -29,17 +29,18 @@ body {
     overflow: hidden;
 }
 
+
     .caption h4 {
         white-space: nowrap;
     }
 
+    .caption .addToCart {
+        position: absolute;
+        width:82%;
+        bottom: 30px;
+    }
 .thumbnail img {
     width: 100%;
-}
-
-.addToCart {
-    padding-right: 10px;
-    padding-left: 10px;
 }
 
 .thumbnail {

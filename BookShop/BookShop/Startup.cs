@@ -28,6 +28,9 @@ namespace BookShop
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));//  when user comes to site creates scoped shopping cart,  getcart method going to be invoked when user senses a request
+            services.AddHttpContextAccessor();
+            services.AddSession();
             services.AddControllersWithViews();
         }
 
@@ -40,7 +43,7 @@ namespace BookShop
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            
+            app.UseSession();//brings middleware for using session
 
             app.UseRouting();
 

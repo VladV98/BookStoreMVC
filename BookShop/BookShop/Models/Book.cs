@@ -18,7 +18,6 @@ namespace BookShop.Models
         public string ImageThumbnailUrl { get; set; }
         public bool IsBookOfTheWeek { get; set; }
         public bool InStock { get; set; }
-        public bool Paid { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
 
