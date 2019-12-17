@@ -20,13 +20,15 @@ namespace BookShop.Controllers
             _bookRepository = bookRepository;
             _categoryRepository = categoryRepository;
         }
-        public ViewResult List()
+        /*public ViewResult List()
         {
             BooksListViewModel booksListViewModel = new BooksListViewModel();
             booksListViewModel.Books = _bookRepository.AllBooks;
             booksListViewModel.CurrentCategory = "Computer Books";
             return View(booksListViewModel);// displays all books 
-        }
+        }*/
+
+
 
         public IActionResult Details(int id)
         {
@@ -35,6 +37,30 @@ namespace BookShop.Controllers
                 return NotFound();
             return View(book);
         }
-        
+
+        public ViewResult List(string category)
+        {
+            IEnumerable<Book> books;
+            string currentCategory;
+
+            if (string.IsNullOrEmpty(category))
+            {
+                books = _bookRepository.AllBooks.OrderBy(p => p.BookId);
+                currentCategory = "All books";
+            }
+            else
+            {
+                books = _bookRepository.AllBooks.Where(p => p.Category.CategoryName == category)
+                    .OrderBy(p => p.BookId);
+                currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.CategoryName == category)?.CategoryName;
+            }
+
+            return View(new BooksListViewModel
+            {
+                Books = books,
+                CurrentCategory = currentCategory
+            });
+        }
+
     }
 }
