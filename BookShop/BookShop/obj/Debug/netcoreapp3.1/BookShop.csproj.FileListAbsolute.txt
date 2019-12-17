@@ -76,3 +76,4 @@ C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\ShoppingCart\Index.cshtml.g.cs
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
 C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
+C:\Users\Pasha\BookStoreMVC\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
