@@ -40,7 +40,10 @@ namespace BookShop.Controllers
             if (ModelState.IsValid)
             {
                 _orderRepository.CreateOrder(order);
+                _shoppingCart.Paid = true;
                 _shoppingCart.ClearCart();
+                
+                
                 return RedirectToAction("CheckoutComplete");
             }
             return View(order);

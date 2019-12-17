@@ -1,39 +1,67 @@
 ﻿@model ShoppingCartViewModel
 
-<h2>Your shopping cart</h2>
-<h4>Here are the books in your shopping cart.</h4>
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Selected amount</th>
-            <th>Book</th>
-            <th class="text-right">Price</th>
-            <th class="text-right">Subtotal</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
-        {
-        <tr>
-            <td class="text-center">@line.Amount</td>
-            <td class="text-left">@line.Book.Name</td>
-            <td class="text-right">@line.Book.Price.ToString("\u20AC0.00")</td>
-            <td class="text-right">
-                @((line.Amount * line.Book.Price).ToString("\u20AC0.00"))
-            </td>
-        </tr> 
-        }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3" class="text-right">Total:</td>
-            <td class="text-right">
-                @Model.ShoppingCartTotal.ToString("\u20AC0.00")
-            </td>
-        </tr>
-    </tfoot>
-</table>
+@using System.Linq
 
+
+@using Microsoft.AspNetCore.Routing
+@using Microsoft.EntityFrameworkCore.Internal
+@using Microsoft.Extensions.Configuration.CommandLine
+
+
+
+@{
+    ViewBag.Title = "Shopping Cart";
+}
+
+<h2>Shopping Cart</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><em>Title</em></th>
+                <th><em>Author</em></th>
+                <th><em>Quantity</em></th>
+                <th><em>Date Created</em></th>
+                <th><em>Price</em></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var orderLine in Model.ShoppingCart.ShoppingCartItems)
+            {
+                <tr>
+                    <td><h4>@Html.ActionLink(orderLine.Book.Name, "Details", "Book", new { id = orderLine.Book.BookId }, new { })</h4></td>
+                    <td>@orderLine.Book.Author</td>
+                    <td>
+                        @using (Html.BeginForm("AddToShoppingCart", "ShoppingCart", FormMethod.Post))
+                        {
+
+                            @Html.Hidden("BookId", orderLine.Book.BookId, new { })
+                            <input name="Quantity" type="number" value="@orderLine.Amount" min="1" max="@int.MaxValue" required />
+                           
+                            <button type="submit" class="btn btn-success">+</button>
+                        }
+                    </td>
+                    <td> @Model.ShoppingCart.ShoppingCartDateCreated</td>
+                    <td>&euro; @orderLine.Book.Price.ToString("0.00")</td>
+                    <td>
+                        @Html.ActionLink("X", "RemoveFromShoppingCart", "ShoppingCart", new { id = orderLine.ShoppingCartId }, new { @class = "btn btn-danger" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th><h4><strong>Total</strong></h4></th>
+                <th></th>
+                <th>@Model.ShoppingCartTotal</th>
+                <th>&euro; @Model.ShoppingCartTotal.ToString("0.00")</th>
+            </tr>
+
+        </tfoot>
+    </table>
+</div>
 <div class="text-center">
     <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Check out now!</a>
 </div>

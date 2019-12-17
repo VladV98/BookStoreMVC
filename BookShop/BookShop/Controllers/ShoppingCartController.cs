@@ -34,7 +34,7 @@ namespace BookShop.Controllers
             return View(shoppingCartViewModel);
         }
 
-        public RedirectToActionResult AddToShoppingCart(int bookId)// passed id of the book that needs to be added
+        public IActionResult AddToShoppingCart(int bookId)// passed id of the book that needs to be added
         {
             var selectedBook = _bookRepository.AllBooks.FirstOrDefault(p => p.BookId == bookId); //gets book through bookrepository
 
@@ -45,7 +45,7 @@ namespace BookShop.Controllers
             return RedirectToAction("Index");
         }
 
-        public RedirectToActionResult RemoveFromShoppingCart(int bookId)
+        public IActionResult RemoveFromShoppingCart(int bookId)
         {
             var selectedBook = _bookRepository.AllBooks.FirstOrDefault(p => p.BookId == bookId);
 

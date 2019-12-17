@@ -73,7 +73,7 @@ namespace BookShop.Models
             var shoppingCartItem =
                     _appDbContext.ShoppingCartItems.SingleOrDefault(
                         s => s.Book.BookId == book.BookId && s.ShoppingCartId == ShoppingCartId);// 
-
+            
             var localAmount = 0;
 
             if (shoppingCartItem != null)
