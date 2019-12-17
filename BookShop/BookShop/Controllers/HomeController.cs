@@ -18,6 +18,7 @@ namespace BookShop.Controllers
         {
             _bookRepository = bookRepository;
         }
+
         public IActionResult Index()
         {
             var homeViewModel = new HomeViewModel // contains books of the week

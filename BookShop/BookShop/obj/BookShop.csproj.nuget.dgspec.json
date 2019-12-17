@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pasha\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj": {}
+    "C:\\Users\\V\\Desktop\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pasha\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj": {
+    "C:\\Users\\V\\Desktop\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pasha\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj",
+        "projectUniqueName": "C:\\Users\\V\\Desktop\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj",
         "projectName": "BookShop",
-        "projectPath": "C:\\Users\\Pasha\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj",
-        "packagesPath": "C:\\Users\\Pasha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pasha\\BookStoreMVC\\BookShop\\BookShop\\obj\\",
+        "projectPath": "C:\\Users\\V\\Desktop\\BookStoreMVC\\BookShop\\BookShop\\BookShop.csproj",
+        "packagesPath": "C:\\Users\\V\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\V\\Desktop\\BookStoreMVC\\BookShop\\BookShop\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Pasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\V\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

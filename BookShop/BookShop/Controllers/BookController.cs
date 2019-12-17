@@ -28,8 +28,6 @@ namespace BookShop.Controllers
             return View(booksListViewModel);// displays all books 
         }*/
 
-
-
         public IActionResult Details(int id)
         {
             var book = _bookRepository.GetBookById(id);
